@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/loader.js",
+  "scripts": {
+    "dev": "nodemon",
+    "production": "pm2 start src/loader.js --name todo-app"
+  },
+  "keywords": [],
+  "author": "Fabiano",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.0",
+    "mysql2": "^1.5.3",
+    "node-restful": "^0.2.5",
+    "nodemon": "^1.17.3",
+    "pm2": "^2.1.5",
+    "sequelize": "^4.37.5"
+  }
+}
