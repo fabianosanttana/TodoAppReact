@@ -1,13 +1,14 @@
 import React from 'react'
-
+import IconButton from "../template/iconButton";
 export default props => {
     const list = props.list || []
 
     const renderRows = () =>{
         return (
             list.map(todo => (
-                <tr>
+                <tr key={todo._id}>
                     <td>{todo.description}</td>
+                    <td><IconButton hide="false" style="danger" icon="remove" onClick={props.handleDelete(todo._id)}/></td>
                 </tr>
             ))
         )
